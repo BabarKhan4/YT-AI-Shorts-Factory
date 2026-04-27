@@ -1,11 +1,31 @@
-<div align="center">
+# AI Shorts Factory
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+A local-first AI YouTube Shorts automation system.
 
-  <h1>Built with AI Studio</h2>
+## Features
+- **Local AI**: Connects to your local Ollama instance for script generation.
+- **Stock Automation**: Searches Pexels/Pixabay for relevant vertical clips.
+- **Rendering Pipeline**: Uses FFmpeg to composite audio, video, and animated subtitles.
+- **Queue System**: Manage multiple video jobs and batch render them.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## Local Setup (Mac)
+1. **Install Dependencies**:
+   - `brew install ffmpeg`
+   - `brew install ollama`
+2. **Run Ollama**:
+   - `ollama serve`
+   - `ollama pull qwen2.5` (or your preferred model)
+3. **Run this App**:
+   - `npm install`
+   - `npm run dev`
+4. **Configuration**:
+   - Open the app and follow the Setup Wizard.
+   - Enter your Pexels/Pixabay API keys.
+   - Set your workspace folders.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
-
-</div>
+## Built With
+- React + TypeScript + Vite
+- Express (Node.js Backend)
+- Tailwind CSS (Modern Dark UI)
+- Framer Motion
+- Fluent FFmpeg

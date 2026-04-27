@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #e11d48; /* rose-600 */
+  --color-accent: #f97316; /* orange-500 */
+  --color-danger: #ef4444;
+  --color-surface: #111111;
+  --color-surface-soft: #0a0a0a;
+  --color-border: #1f1f1f;
+  
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+}
+
+body {
+  @apply bg-[#050505] text-[#EDEDED] antialiased;
+  min-height: 100vh;
+}
+
+.glass-card {
+  background-color: #111111;
+  border-width: 1px;
+  border-color: #1f1f1f;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.bento-inner {
+  @apply bg-[#0a0a0a] border border-[#1f1f1f] rounded-xl;
+}
+
